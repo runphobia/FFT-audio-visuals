@@ -22,3 +22,6 @@ python Spectogram.py "path/to/your/song.wav"
 ```
 ## How it works
 Audio is decoded into raw PCM samples, chunked into 2048-sample windows with 50% overlap, and passed through an FFT to get frequency content at each moment in time. Each frequency bin is normalized independently so bass-heavy and treble-heavy songs both display with full contrast. The result is pre-rendered into a pygame surface and scrolled in sync with audio playback via `pygame.mixer.music.get_pos()`.
+
+<img width="1204" height="817" alt="image" src="https://github.com/user-attachments/assets/d45c20f5-e183-4d88-a2ce-2401f40b4fdb" />
+
